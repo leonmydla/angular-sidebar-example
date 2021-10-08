@@ -1,16 +1,16 @@
-<div class="void"
+<div (click)="hide()"
      [class.open]="open"
-     (click)="hide()"></div>
-<div class="sidebar" [class.open]="open">
+     class="void"></div>
+<div [class.open]="open" class="sidebar">
   <h1>Navigation</h1>
   <ul>
-    <li><a href="#" (click)="hide()">List Item 1</a></li>
-    <li><a href="#" (click)="hide()">List Item 2</a></li>
-    <li><a href="#" (click)="hide()">List Item 3</a></li>
-    <li><a href="#" (click)="hide()">List Item 4</a></li>
-    <li><a href="#" (click)="hide()">List Item 5</a></li>
-    <li><a href="#" (click)="hide()">List Item 6</a></li>
-    <li><a href="#" (click)="hide()">List Item 7</a></li>
-    <li><a href="#" (click)="hide()">List Item 8</a></li>
+    <li><a (click)="hide()" href="#">List Item 1</a></li>
+    <li><a (click)="hide()" href="#">List Item 2</a></li>
+    <li><a (click)="hide()" href="#">List Item 3</a></li>
+    <li><a (click)="hide()" href="#">List Item 4</a></li>
+    <li><a (click)="hide()" href="#">List Item 5</a></li>
+    <li><a (click)="hide()" href="#">List Item 6</a></li>
+    <li><a (click)="hide()" href="#">List Item 7</a></li>
+    <li><a (click)="hide()" href="#">List Item 8</a></li>
   </ul>
 </div>

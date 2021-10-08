@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {SidebarToggleService} from "./sidebar-toggle.service";
 
 @Component({
@@ -10,7 +10,8 @@ export class SidebarToggleComponent {
 
   constructor(
     private readonly sidebarToggleService: SidebarToggleService
-  ) { }
+  ) {
+  }
 
   toggle() {
     this.sidebarToggleService.show();

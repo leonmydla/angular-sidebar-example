@@ -8,12 +8,12 @@ import {SidebarToggleService} from "../sidebar-toggle/sidebar-toggle.service";
 })
 export class SidebarComponent implements OnInit {
 
+  open = false;
+
   constructor(
     private readonly sidebarToggleService: SidebarToggleService
   ) {
   }
-
-  open = false;
 
   ngOnInit(): void {
     this.listenForToggleEvents();
