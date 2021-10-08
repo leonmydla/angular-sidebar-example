@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { SidebarToggleComponent } from './sidebar/sidebar-toggle/sidebar-toggle.component';
+import { SidebarToggleComponent } from './sidebar-toggle/sidebar-toggle.component';
 
 @NgModule({
   declarations: [

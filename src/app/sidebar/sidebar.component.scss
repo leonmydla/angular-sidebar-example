@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'include-media';
+
+.sidebar {
+  position: absolute;
+  width: $sidebar-width;
+  height: 100%;
+  padding: 20px;
+  background-color: $lightred;
+  transition: left 200ms ease-in-out;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  @include media('<tablet') {
+    left: -$sidebar-width;
+  }
+
+  &.open {
+    left: 0;
+  }
+}
+
+@include media('<tablet') {
+  .void {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    z-index: 100;
+
+    &.open {
+      display: block;
+      opacity: 1;
+      transition: opacity 200ms ease-in-out;
+    }
+  }
+}
+
+
+// eye candy
+.sidebar {
+  font-size: 1.5em;
+}
+
+h1, ul, a {
+  color: white;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}

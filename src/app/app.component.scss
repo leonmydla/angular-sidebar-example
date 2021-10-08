@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'include-media';
+
+main {
+  height: 100%;
+  overflow: hidden;
+  background-color: $sand;
+  transition: background-color 100ms;
+
+  @include media('>tablet') {
+    width: calc(100% - $sidebar-width);
+    margin-left: $sidebar-width;
+  }
+
+  @include media('<=tablet') {
+    background-color: $lightgreen;
+  }
+
+  @include media('<=mobile') {
+    background-color: $stained;
+  }
+}
+
+header {
+  padding: 25px;
+  background-color: $cherry;
+}
+
+app-sidebar-toggle {
+  @include media('>tablet') {
+    display: none;
+  }
+}
+
+.lorem {
+  padding: 25px;
+  font-size: 1.2em;
+}
